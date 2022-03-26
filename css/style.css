@@ -1,0 +1,502 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  cursor: default;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"),
+    url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: Montserrat;
+  overflow-x: hidden;
+  position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  width: 80rem;
+  margin: 140px 56px;
+}
+
+header {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header_art {
+  background: url(../img/pexels-cottonbro-45037511.png);
+  width: 38rem;
+  height: 46.25rem;
+}
+
+.header_conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 608px;
+  height: 740px;
+}
+.Kembang {
+  display: flex;
+  flex-direction: column;
+  width: 32.5rem;
+  height: 17.8125rem;
+  justify-content: space-between;
+}
+.list-swap {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6.875rem;
+}
+.list-swap span {
+  font-size: 24px;
+  display: flex;
+  line-height: 29px;
+}
+.next {
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.next img {
+  padding-left: 8px;
+}
+.prev {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.prev img {
+  padding-right: 8px;
+}
+
+.nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.75rem 0;
+  width: 100%;
+}
+
+.nav div {
+  padding: 0 3.5rem;
+}
+
+.nav button {
+  margin: 0 3.5rem;
+}
+
+h1 {
+  font-size: 67px;
+  color: #156963;
+  line-height: 83px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.next {
+  background-color: #156963;
+}
+.next span {
+  color: #a8a8a8;
+}
+.next .next-name {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.prev span {
+  color: #a8a8a8;
+}
+.prev-name {
+  color: #156963;
+  font-size: 32px;
+}
+
+button {
+  background-color: #156963;
+  color: #ffffff;
+  border: none;
+  padding: 8px 32px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.info-card {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  width: 16.75rem;
+  height: 9.6875rem;
+  font-size: 10px;
+  line-height: 16px;
+}
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 22px 16px;
+}
+.head-info {
+  display: flex;
+  justify-content: space-around;
+}
+.head-info div {
+  color: #156963;
+  padding: 10px 0 0 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.Featured {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+.Featured div {
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+.Featured select {
+  height: 31px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-item div {
+  margin: 8px;
+}
+.price {
+  font-weight: 600;
+}
+
+.hole {
+  background-color: #001e35;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.modal-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-info div {
+  margin: 10px 30px;
+}
+
+.modal-info h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+.modal-text {
+  display: flex;
+  font-weight: 400;
+  font-size: 15px;
+}
+.btn {
+  padding: 9px 60px;
+  border-radius: 16px;
+  border: 1px solid #cce1fe;
+  background-color: #fff;
+  color: #000;
+}
+.push-btn {
+  background-color: #e8f2ff;
+}
+.modal-btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.modal-input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.input {
+  border: 1px solid #b5b8be;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+.alert {
+  margin: 14px;
+  font-size: 14px;
+}
+/*=======================================modal=========================================*/
+#openModal,
+.modal-dialog {
+  opacity: 0;
+  z-index: -1;
+}
+.modal.open #openModal,
+.modal.open .modal-dialog {
+  opacity: 1;
+  z-index: 9999;
+}
+.overflow {
+  overflow: hidden;
+}
+
+#openModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  background-color: #fff;
+  width: 470px;
+  height: 457px;
+  border-radius: 8px;
+}
+.modal-header {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  left: -15px;
+  top: 15px;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+/*========================================== kay fram===================================== */
+@media (max-width: 1300px) {
+  main {
+    width: 100%;
+  }
+}
+
+/*====================================anime============================*/
+.anime {
+  opacity: 0;
+  position: relative;
+  bottom: 180px;
+  left: 180px;
+  height: 30px;
+  width: 100px;
+  background-color: #156963;
+}
+
+.anime.rot {
+  opacity: 1;
+  animation: 1s linear 0s normal none infinite running rot;
+  -webkit-animation: 1s linear 0s normal none infinite running rot;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
